@@ -56,16 +56,13 @@ namespace SalesWebMvc.Migrations
 
                     b.Property<double>("BaseSalary");
 
-                    b.Property<DateTime>("BirthDate");
+                    b.Property<DateTime>("BithDate");
 
                     b.Property<int>("DepartmentId");
 
-                    b.Property<string>("Email")
-                        .IsRequired();
+                    b.Property<string>("Email");
 
-                    b.Property<string>("Name")
-                        .IsRequired()
-                        .HasMaxLength(60);
+                    b.Property<string>("Name");
 
                     b.HasKey("Id");
 
